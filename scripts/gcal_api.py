@@ -97,11 +97,11 @@ class OAuthHandler(http.server.BaseHTTPRequestHandler):
         params = urllib.parse.parse_qs(parsed.query)
         state = params.get("state", [""])[0]
         if self.expected_state and state != self.expected_state:
-            self.error = "state_mismatch"
+            type(self).error = "state_mismatch"
         elif "error" in params:
-            self.error = params["error"][0]
+            type(self).error = params["error"][0]
         else:
-            self.code = params.get("code", [None])[0]
+            type(self).code = params.get("code", [None])[0]
         self.send_response(200)
         self.send_header("Content-Type", "text/html; charset=utf-8")
         self.end_headers()
