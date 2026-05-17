@@ -1,0 +1,30 @@
+[project]
+name = "google-calendar-api-direct-skill"
+version = "0.1.0"
+description = "Codex skill and stdlib CLI for direct Google Calendar API calendar and event operations"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [
+  { name = "Sunwood AI Labs" }
+]
+keywords = ["codex", "skill", "google-calendar", "google-calendar-api", "oauth"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+]
+
+[project.urls]
+Homepage = "https://github.com/Sunwood-ai-labs/google-calendar-api-direct-skill"
+Repository = "https://github.com/Sunwood-ai-labs/google-calendar-api-direct-skill"
+
+[project.scripts]
+gcal-api-direct = "scripts.gcal_api:main"
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"

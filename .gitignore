@@ -1,0 +1,28 @@
+# Local OAuth credentials and tokens
+client_secret*.json
+token*.json
+.env
+.env.*
+
+# Skill runtime secrets live outside the repository by default.
+.codex/
+google-calendar-api-direct/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# OS/editor noise
+.DS_Store
+.idea/
+.vscode/
+
+# Build and packaging output
+dist/
+build/
+*.egg-info/

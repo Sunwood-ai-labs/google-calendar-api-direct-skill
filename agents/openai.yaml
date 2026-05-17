@@ -1,0 +1,4 @@
+interface:
+  display_name: "Google Calendar API Direct"
+  short_description: "Create calendars and events with Google Calendar API"
+  default_prompt: "Use $google-calendar-api-direct to create a Google Calendar and add verified sample events through the direct API."
